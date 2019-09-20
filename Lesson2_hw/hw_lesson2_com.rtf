@@ -17,4 +17,5 @@ ALTER TABLE cities ADD COLUMN country_id INT NOT NULL AFTER region_id;\
 ALTER TABLE cities ADD CONSTRAINT countr_id FOREIGN KEY (country_id) REFERENCES Countries(id)ON UPDATE CASCADE ON DELETE RESTRICT;\
 ALTER TABLE cities ADD COLUMN important TINYINT(1) NOT NULL;\
 describe cities;\
+
 }
